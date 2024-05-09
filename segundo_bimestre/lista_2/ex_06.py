@@ -1,0 +1,3 @@
+import prog
+
+prog.main()

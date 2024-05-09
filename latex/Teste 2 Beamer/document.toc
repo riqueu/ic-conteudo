@@ -1,3 +1,0 @@
-\beamer@sectionintoc {1}{Entrada Dramática}{2}{0}{1}
-\beamer@sectionintoc {2}{A Grande Afirmação}{3}{0}{2}
-\beamer@sectionintoc {3}{Será?}{4}{0}{3}
