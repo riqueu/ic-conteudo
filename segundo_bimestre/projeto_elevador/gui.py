@@ -31,6 +31,7 @@ def loop_de_evento(n, page):
 
 def atualiza_mostradores(m, val):
     m.value = str(val)
+    m.bgcolor = ft.colors.GREEN_200
 
 
 def main(page: ft.Page):
@@ -38,8 +39,12 @@ def main(page: ft.Page):
     page.vertical_alignment = ft.MainAxisAlignment.CENTER
     page.update()
 
-    page.most1 = ft.TextField(value=0, label='Elevador 1', bgcolor=ft.colors.GREEN_200)
-    page.most2 = ft.TextField(value=0, label='Elevador 2', bgcolor=ft.colors.GREEN_200)
+    def muda_cor(e):
+        e.control.bgcolor = ft.colors.AMBER_300
+        e.page.update()
+
+    page.most1 = ft.TextField(value=0, label='Elevador 1', bgcolor=ft.colors.GREEN_200, on_change=muda_cor)
+    page.most2 = ft.TextField(value=0, label='Elevador 2', bgcolor=ft.colors.GREEN_200, on_change=muda_cor)
 
     page.add(
         ft.Row(
